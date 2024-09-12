@@ -1,0 +1,181 @@
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 50px;
+}
+
+.navbar {
+    background-color: #454647;
+    /* padding: 1rem 2rem; */
+    height: auto;
+}
+.navbar-brand {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    font-size: 1.1rem;
+    margin-right: 1rem;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #3dd5f3;
+}
+
+.navbar-nav .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+  
+.dropdown-menu {
+    background-color: #43474b;
+    transition: display 0.3s ease;
+}
+
+.dropdown-item{
+    color: white;
+}
+
+.dropdown-item:hover{
+    color:#3dd5f3 ;
+    background-color: #43474b;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-toggler {
+      margin-left: 0px;
+    }
+}
+.btn-custom {
+    background-color: #3dd5f3;
+    color: #000;
+    font-weight: bold;
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.btn-custom:hover {
+    background-color: #3dd5f3;
+    transform: scale(1.1);
+}
+
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+    .navbar-nav .nav-link {
+        margin: 0.5rem 0;
+    }
+    .btn-custom {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+#hero {
+    height: 100vh; /* Full screen height */
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-item {
+    height: 100vh; /* Ensure the height is the same for all carousel items */
+}
+
+.carousel-item img {
+    /* object-fit: cover; Ensures the image covers the entire carousel item */
+    height: 100%; /* Set image height to 100% of the container */
+    width: 100%; /* Set image width to 100% of the container */
+
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    padding: 20px;
+    border-radius: 10px; /* Optional: Rounded corners */
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.1rem;
+}
+
+#about img {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Optional: shadow for the image */
+}
+
+/* Basic styles for the gallery section */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px; /* Rounded corners */
+}
+
+.gallery-image {
+    transition: transform 0.4s ease;
+    width: 100%;
+    height: 270px;
+}
+
+/* Hover effect to scale image */
+.gallery-item:hover .gallery-image {
+    transform: scale(1.1); /* Zoom in on hover */
+}
+
+/* Overlay effect */
+
+
+/* Show overlay on hover */
+.gallery-item:hover .overlay {
+    opacity: 1;
+}
+
+/* Gallery responsiveness */
+@media (max-width: 767px) {
+    .gallery-item {
+        margin-bottom: 20px;
+    }
+}
+
+#contact {
+    background-color: #f8f9fa; /* Light background */
+    /* padding: 50px 0; */
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+/* .contact-heading h2{
+    color: black;
+} */
+
+#contactForm .form-control {
+    border-radius: 10px; /* Rounded corners for form inputs */
+    padding: 10px;
+}
+
+#contactForm .btn-primary {
+    background-color: #007bff; /* Primary blue color */
+    border-color: #007bff;
+    padding: 10px 30px;
+    border-radius: 20px; /* Rounded button */
+    transition: background-color 0.3s;
+}
+
+#contactForm .btn-primary:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
